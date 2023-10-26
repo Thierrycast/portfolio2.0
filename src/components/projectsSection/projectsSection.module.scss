@@ -1,0 +1,53 @@
+.container{
+    width: 100%;
+    background-color: var(--preto-2);
+    padding: 9rem 0;
+
+    h1{
+        color: var(--roxo-2);
+        font-size: 4.4rem;
+        font-weight: 600;
+        margin-bottom: 4.8rem;
+    }
+
+    p{
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 300;
+
+        margin-bottom: 6rem;
+    }   
+}
+
+.boxCarrousel{
+}
+
+.slider_container{
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    //background-color: rgb(221, 255, 0);
+    
+    padding: 2rem;
+}
+
+.slider_item {
+    transform: scale(0.9);
+    transition: transform 1000ms;
+    background-color: rgb(48, 50, 61);
+
+    border: solid 2px var(--roxo-2);
+
+    height: 30rem;
+
+    margin: 2rem 0;
+  }
+
+.slider_item_active{   
+    transform: scale(1.1); 
+    //background-color: rgb(244, 61, 192);
+    transition: transform 1000ms;
+}

@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import HomeSection from '@/components/HomeSection'
 import AboutSection from '@/components/AboutSection'
 import TechnologiesSection from '@/components/TechnologiesSection'
+import ProjectsSection from '@/components/projectsSection'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HomeSection/>
       <AboutSection/>
       <TechnologiesSection/>
+      <ProjectsSection/>
     </>
   )
 }
