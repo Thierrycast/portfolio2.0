@@ -4,7 +4,7 @@ import {technologies} from '@/data/technologies'
 
 export default function TechnologiesSection() {
   return (
-    <div className={Styles.container} >
+    <div id="tecnologies" className={Styles.container} >
       <h1>Conhecimentos( )</h1>
 
       <div className={Styles.technologies} >

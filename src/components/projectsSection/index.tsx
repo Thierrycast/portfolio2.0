@@ -55,7 +55,7 @@ const projects = [
 export default function ProjectsSection() {
 
   return (
-    <div className={styles.container}>
+    <div id='projects' className={styles.container}>
 
       <div>
         <h1>Projetos( )</h1>
