@@ -1,87 +1,84 @@
-"use client"
+'use client'
 
+import index from '../AboutSection'
 import styles from './projectsSection.module.scss'
 
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { SetStateAction, useState } from 'react';
-
-import Image from 'next/image';
-
-import futebol from '@/assets/jobs/futebol.jpg'
+import fuja from '../../assets/jobs/fuja.png'
 
 const projects = [
   {
-    img: futebol,
-    name: 'futebol'
+    name: "Projeto Fuja",
+    description: "Desenvolvimento de um site para uma empresa de audiovisual, utilizando React, TypeScript e responsividade.",
+    repo: "Repositório: Insira a URL aqui", 
+    site: "Site: Insira a URL aqui", 
+    img: '../../assets/jobs/fuja.png'
   },
   {
-    img: futebol,
-    name: 'futebol'
+    name: "Portfólio Fotografo",
+    description: "Criação de um portfólio online para um fotógrafo, com o uso de Next.js, TypeScript e Sass.",
+    repo: "Repositório: Insira a URL aqui", 
+    site: "Site: Insira a URL aqui", 
+    img: "Imagem: Insira a URL aqui" 
   },
   {
-    img: futebol,
-    name: 'futebol'
+    name: "APIs de Tarefas",
+    description: "Desenvolvimento de três APIs com o mesmo propósito: gerenciar tarefas. Feitas em TypeScript, C# e Java.",
+    repo: "Repositório: Insira a URL aqui", 
+    site: "Site: Insira a URL aqui", 
+    img: "Imagem: Insira a URL aqui" 
   },
   {
-    img: futebol,
-    name: 'futebol'
+    name: "Projeto Fuja",
+    description: "Desenvolvimento de um site para uma empresa de audiovisual, utilizando React, TypeScript e responsividade.",
+    repo: "Repositório: Insira a URL aqui", 
+    site: "Site: Insira a URL aqui", 
+    img: "Imagem: Insira a URL aqui" 
   },
   {
-    img: futebol,
-    name: 'futebol'
+    name: "Portfólio Fotografo",
+    description: "Criação de um portfólio online para um fotógrafo, com o uso de Next.js, TypeScript e Sass.",
+    repo: "Repositório: Insira a URL aqui", 
+    site: "Site: Insira a URL aqui", 
+    img: "Imagem: Insira a URL aqui" 
   },
   {
-    img: futebol,
-    name: 'futebol'
+    name: "APIs de Tarefas",
+    description: "Desenvolvimento de três APIs com o mesmo propósito: gerenciar tarefas. Feitas em TypeScript, C# e Java.",
+    repo: "Repositório: Insira a URL aqui", 
+    site: "Site: Insira a URL aqui", 
+    img: "Imagem: Insira a URL aqui" 
   },
-]
+];
+
+
 
 export default function ProjectsSection() {
 
-  const [imageIndex, setImageIndex] = useState(0)
-
-  const settings = {
-    infinite: true,
-    speed:500,
-    slidesToShow:3,
-    centerMode: true,
-    centerPadding: "0",
-    draggable: false,
-    //variableWidth: true,
-
-    //autoplay: true,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-
-
-    beforeChange: (current: any, next: number) => setImageIndex(next)
-  };
-
-
   return (
     <div className={styles.container}>
-      <h1>Projetos( )</h1>
-      <p>Clique para saber mais sobre os projetos.</p>
-      <div className={styles.boxCarrousel} >
-        <div className={styles.slider_container} >
-        <Slider {...settings}  >
-          {projects.map((project, idx)=>(
-            <div 
-            key={idx} 
-            className={`${styles.slider_item} ${ idx === imageIndex ? styles.slider_item_active : ''}`} 
-            style={{ width: 350 }}
-            >
-            <h1>{idx}</h1>
-            </div>
-          ))}
 
-          
-      
-        </Slider>
+      <div>
+        <h1>Projetos( )</h1>
+        <p>Clique para saber mais sobre os projetos.</p>
       </div>
+
+      <div className={styles.projects} >
+      {projects.map((project, index)=>(
+        <div key={index} className={styles.projects_item} >
+          <div>
+            <h2>{project.name}</h2>
+            <p>{project.description}</p>
+          </div>
+
+          <div className={styles.item_links} >
+            <a href="">Visitar repositorio</a>
+          </div>
+        </div>
+
+      ))}
       </div>
+      <span>Repositórios no GitHub</span>
+
     </div>
   )
 }
