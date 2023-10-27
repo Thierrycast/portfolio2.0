@@ -25,7 +25,7 @@
     }
 }
 
-.menu{
+.menuDesktop{
     display: flex;
     align-items: center;
 
@@ -68,4 +68,26 @@
           }
         }
       }
+}
+
+.menuMobile{
+  display: none;
+}
+
+@media (max-width: 800px) {
+
+  .header{
+      padding: 0 1.6rem;
+     justify-content: center;
+
+      
+  }
+
+  .menuDesktop{
+      display: none;
+  }
+
+  .menuMobile{
+      display: block;
+  }
 }
