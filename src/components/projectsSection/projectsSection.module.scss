@@ -77,3 +77,52 @@
 
     }
 }
+
+@media (max-width: 768px) {
+
+    .container{
+       
+        padding: 4rem 1.6rem ;
+    
+        div{
+            width: 100%;
+    
+            h1{
+                font-size: 3.2rem;
+            }
+        
+            p{
+                font-size: 1.8rem;
+            } 
+        }
+    
+        span{
+                
+            font-size: 1.8rem;
+            color: var(--roxo-2);
+        }
+    }
+    
+    .projects{
+        justify-content: center;
+    
+        .projects_item{
+            width: 90%;
+    
+            padding: 2rem;
+
+    
+            h2{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            }
+    
+            p{
+                font-size: 1.4rem;
+
+    
+            margin-bottom: 1.8rem;
+            }
+        }
+    }
+}
