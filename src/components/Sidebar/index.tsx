@@ -19,7 +19,7 @@ export default function Sidebar(props : SidebarProps) {
         
         setTimeout(() => {
 
-          const headerHeight = 90; 
+          const headerHeight = 70; 
           const yOffset = section.getBoundingClientRect().top - headerHeight;
     
           window.scrollBy({top: yOffset});
