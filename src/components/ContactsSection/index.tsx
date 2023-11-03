@@ -1,3 +1,5 @@
+"use client"
+
 import Styles from './contactsSection.module.scss'
 
 import iconWhatsapp from '@/assets/icon-whatsapp.svg'
@@ -15,8 +17,7 @@ export default function ContactsSection() {
         <div className={Styles.left} >
             <h2>Tem um projeto de desenvolvimento e deseja conversar?</h2>
             <p>
-                Entre em contato em uma das minhas <span>redes sociais</span> abaixo ou preencha o <span>formulário</span> ao lado.
-            </p>
+                Entre em contato em uma das minhas <span>redes sociais</span> abaixo ou preencha o <span>formulário</span>.</p>
             <div className={Styles.social_medias} >
                 <a target="_blank" href="https://wa.me/5533999595927">
                     <Image alt='' src={iconWhatsapp}/>WhatsApp
