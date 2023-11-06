@@ -10,6 +10,8 @@ body {
   overflow-x: hidden;
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  background: #141414;
 }
 
 :root {

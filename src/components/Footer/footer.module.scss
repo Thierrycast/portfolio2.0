@@ -10,3 +10,13 @@
         color: #9298A3;
     }
 }
+
+@media (max-width: 768px) {
+
+    .container{
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
