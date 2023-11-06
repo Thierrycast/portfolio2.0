@@ -12,7 +12,7 @@
         margin-bottom: 4.8rem;
     }
 
-    p{
+    .about_text{
         font-size: 2rem;
         color: #fff;
         font-weight: 300;
@@ -36,57 +36,112 @@
     height:150px;
     display: flex;
     align-items: center;
+
+    
 }
 
 .trajetoria {
-    position: relative;
+
+  display: flex;
+  justify-content: space-around;
+
   width: 100%;
   height: 1px; /* Altura da linha */
-  background: repeating-linear-gradient(90deg, var(--roxo-2), var(--roxo-2) 2px, transparent 2px, transparent 4px); /* Cria uma linha tracejada com traços de 2px */
-  
-  
-    .linha {
-      display: flex;
-      align-items: center;
-      width: 100%;
+
+  background: repeating-linear-gradient(90deg, var(--roxo-2), var(--roxo-2) 2px, transparent 2px, transparent 4px)
      
     }
+
+    .item_trajetoria{
+
+
+        width: 30rem;
+        height: 8rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 500;
+          margin-top: 1rem;
+          text-align: center;
+          color: #fff; /* Cor do texto na bolinha */
+        }
+    }
+
   
     .bolinha {
-        max-width: 30rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       position: relative;
-      top: -1rem; /* Mova as bolinhas um pouco para cima (ajuste conforme necessário) */
+      top: -9px;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--roxo-2);
+    }
   
-      span {
-        width: 2rem;
-        height: 2rem; 
-        background-color: var(--roxo-2); /* Cor de fundo vermelha para as bolinhas */
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        color: #fff; /* Cor do número na bolinha */
+  
+  @media (max-width: 768px) {
+    .container{
+
+      padding: 4rem 1.6rem;
+
+      h1{
+         font-size: 3.2rem;        
       }
   
-      p {
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-top: 1rem;
-        text-align: center;
-        color: #fff; /* Cor do texto na bolinha */
+      .about_text{
+          font-size: 1.6rem;
       }
   
-      &:first-child {
-        margin-left: 0;
-      }
-  
-      &:last-child {
-        margin-right: 0;
+      h2{
+          font-size: 2rem;
       }
     }
+
+  .trajetoriaContainer{
+    height: auto;  
+    padding-left: 1.6rem;
   }
   
+  .trajetoria {
+  
+    width: 1px;
+    height: 150px; /* Altura da linha */
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: repeating-linear-gradient(0deg, var(--roxo-2), var(--roxo-2) 2px, transparent 2px, transparent 4px);
+    
+    margin-top: 1rem; 
+      }
+  
+      .item_trajetoria{
+  
+          width: 100rem;
+          height: auto;
+  
+          flex-direction: row;
+          align-items: center;
+  
+          p {
+            font-size: 1.4rem;
+            margin-top: 0rem;
+            text-align: start;
+
+            br{
+              display: none;
+            }
+          }
+      }
+  
+    
+      .bolinha {
+        top: 0px;
+        left: -8px;  
+
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+  }
