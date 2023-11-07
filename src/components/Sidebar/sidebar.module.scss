@@ -3,23 +3,24 @@
   
     position: fixed;
     top: 0;
-    right: -80rem; 
+    right: -100vw; 
     width: 100vw;
     height: 100%;
     background-color: var(--preto-2);
+    
     transition: right 0.5s ease-in-out;
   
     display: flex;
     flex-direction: column;
 
-    padding: 8rem;
+    padding: 4rem;
     margin-top: 7rem;
-    border-top: 1px solid var(--roxo-2);
+    border-top: 0.1rem solid var(--roxo-2);
   
     ul{
       display: flex;
       flex-direction: column;
-      gap: 4rem;
+      gap: 3rem;
       list-style: none;
     
   
