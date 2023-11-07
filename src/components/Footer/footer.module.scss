@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+    background-color: var(--roxo-1);
+    padding: 3rem 0;
+
+    p{
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-align: center;
+        color: #9298A3;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container{
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}

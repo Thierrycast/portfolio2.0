@@ -4,7 +4,37 @@
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  background: #141414;
+}
+
+:root {
+  --branco: rgba(255, 255, 255, 1);
+  --branco-2: rgba(255, 250, 250, 1);
+
+  --preto: rgba(0, 0, 0, 1);
+  --preto-2: #141414;
+  --preto-3: #1c1c1c;
+
+  --roxo-1: rgba(45, 3, 59, 1);
+  --roxo-2: #6f20a1;
+
+  --roxo-3: rgba(229, 184, 244, 1);
+  --roxo-4: rgba(252, 243, 255, 1);
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
