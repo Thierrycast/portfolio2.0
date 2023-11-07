@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react"
-import styles from './Sidebar.module.scss'
+import styles from './sidebar.module.scss'
 
 
 interface SidebarProps {
