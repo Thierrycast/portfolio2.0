@@ -1,14 +1,65 @@
 "use client"
+import React from 'react';
+import { useState } from 'react';
 
-import Styles from './contactsSection.module.scss'
+import Styles from './contactsSection.module.scss';
 
-import iconWhatsapp from '@/assets/icon-whatsapp.svg'
-import iconGithub from '@/assets/icon-github.svg'
-import iconLinkedin from '@/assets/icon-linkedin.svg'
+import iconWhatsapp from '@/assets/icon-whatsapp.svg';
+import iconGithub from '@/assets/icon-github.svg';
+import iconLinkedin from '@/assets/icon-linkedin.svg';
 
-import Image from 'next/image'
+import Image from 'next/image';
+
+import api from '@/services/api';
+
+import {ToastError, ToastSuccess } from '@/helpers/Toasts';
+import {toast} from 'react-toastify'
+ 
 
 export default function ContactsSection() {
+
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({
+    nome: "",
+    sobrenome: "",
+    email: "",
+    mensagem: "",
+  });
+
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    if (!form.nome || !form.email || !form.mensagem) {
+      return ToastError("Preencha todos os campos do formulário.")
+    }
+    try {
+
+      const sendEmail = await toast.promise((api.post(`/send-email`, {
+        nome: form.nome,
+        email: form.email,
+        mensagem: form.mensagem,
+      })),{
+      pending: 'Enviando...',
+      success: 'Email enviado',
+      error: 'Falha ao enviar'
+      })
+
+      setForm({ nome: "", sobrenome: "", email: "", mensagem: "" });
+
+      
+      return sendEmail
+
+    } catch (error) {
+      setForm({ nome: "", sobrenome: "", email: "", mensagem: "" });
+      return ToastError('Falha ao enviar')
+    }
+  };
+
+  const handleChangeInput = (e: { target: { value: any; name: any } }) => {
+    const value = e.target.value;
+    const name = e.target.name;
+    setForm({ ...form, [name]: value });
+  };
+
   return (
     <div id='contacts' className={Styles.container} >
       <h1>Contatos( )</h1>
@@ -34,10 +85,27 @@ export default function ContactsSection() {
         </div>
 
         <div className={Styles.right} >
-            <form action="">
-                <input type="text" placeholder='Nome completo' />
-                <input type="text" placeholder='E-mail' />
-                <textarea placeholder='Mensagem' name="" id=""></textarea>
+            <form onSubmit={handleSubmit}>
+                <input 
+                  type="text" 
+                  placeholder='Nome completo'  
+                  name="nome"
+                  value={form.nome}
+                  onChange={handleChangeInput}
+                />
+                <input 
+                  type="email"  
+                  placeholder='E-mail'
+                  name="email"
+                  value={form.email}
+                  onChange={handleChangeInput}
+                />
+                <textarea 
+                  placeholder='Mensagem'
+                  name="mensagem"
+                  value={form.mensagem}
+                  onChange={handleChangeInput}
+                />
                 <button>Enviar</button>
             </form>
         </div>
