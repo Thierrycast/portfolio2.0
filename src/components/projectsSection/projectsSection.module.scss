@@ -29,6 +29,35 @@
             
         font-size: 2rem;
         color: var(--roxo-2);
+        
+    }
+
+    a{
+        position: relative;
+        transition: 0.3s;
+
+        &:hover {
+           color: #8416c9;
+            transition: 0.3s;
+          }
+      
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.2rem;
+            left: 0;
+            right: 0;
+            height: 0.1rem;
+            background: linear-gradient(to right, #ffffff00, var(--roxo-2));
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.6s ease-out;
+          }
+      
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
     }
 }
 
@@ -66,14 +95,13 @@
     }
 
     .item_links{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+       
 
         a{
             font-size: 1.8rem;
             color: var(--roxo-2);
             font-weight: 500;
+           
         }
 
     }
