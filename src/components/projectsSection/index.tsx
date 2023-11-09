@@ -22,13 +22,13 @@ export default function ProjectsSection() {
           </div>
 
           <div className={styles.item_links} >
-            <a href="">Visitar repositorio</a>
+            <a target='_blank' href={project.site}>Visitar repositorio</a>
           </div>
         </div>
 
       ))}
       </div>
-      <span>Repositórios no GitHub</span>
+      <span><a target='_blank' href='https://github.com/Thierrycast?tab=repositories'>Repositórios no GitHub</a></span>
 
     </div>
   )
