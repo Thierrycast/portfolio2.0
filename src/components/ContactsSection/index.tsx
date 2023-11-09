@@ -60,7 +60,6 @@ export default function ContactsSection() {
     setForm({ ...form, [name]: value });
   };
 
-
   return (
     <div id='contacts' className={Styles.container} >
       <h1>Contatos( )</h1>
