@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=6f20a1&height=120&section=header"/>
 
-## Getting Started
+# Portfolio Pessoal
 
-First, run the development server:
+Bem-vindo ao repositório do meu Portfolio Pessoal. Este projeto tem como objetivo apresentar minhas habilidades, conhecimentos e projetos de forma organizada e atraente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Acesso ao Deploy
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Você pode acessar o deploy do meu projeto [aqui](https://portfolio-thierrycast.vercel.app/).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br/>
+<br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologias Utilizadas
 
-## Learn More
+O portfólio foi construído com as seguintes tecnologias:
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 13**: Estrutura para aplicações web rápidas e escaláveis.
+- **TypeScript**: Adiciona tipagem estática ao JavaScript para código mais seguro.
+- **Sass (SCSS)**: Módulo de CSS para estilização modular e organizada.
+- **React-Toastify**: Biblioteca para notificações elegantes em aplicativos React.
+- **Axios**: Facilita requisições HTTP para integração com APIs externas.
+- **Nodemailer**: Biblioteca para envio de e-mails, útil para formulários de contato.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Seções
 
-## Deploy on Vercel
+O portfólio é dividido em cinco seções:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Home**: Boas-vindas e visão geral.
+2. **Sobre**: Minha trajetória, experiência e objetivos.
+3. **Conhecimentos**: Minhas habilidades e tecnologias.
+4. **Projetos**: Destaque para projetos com detalhes e links.
+5. **Contatos**: Informações para fácil contato, incluindo formulários e redes sociais.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=6f20a1&height=120&section=footer"/>
+
