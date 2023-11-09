@@ -28,7 +28,7 @@ export default function ProjectsSection() {
 
       ))}
       </div>
-      <span><a target='_blank' href=''>Repositórios no GitHub</a></span>
+      <span><a target='_blank' href='https://github.com/Thierrycast?tab=repositories'>Repositórios no GitHub</a></span>
 
     </div>
   )
