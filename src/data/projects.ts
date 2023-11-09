@@ -20,7 +20,7 @@ export const projects = [
       repo: "Repositório: Insira a URL aqui", 
       site: "https://github.com/ademaneto01/ProjetoFuja", 
       img: '../../assets/jobs/fuja.png'
-    }
+    },
     
     // {
     //   name: "Projeto Fuja",

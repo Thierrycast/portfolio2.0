@@ -127,3 +127,41 @@
         }
     }
 }
+
+@media (min-width: 1600px) {
+    .container {
+        width: 90%;
+    }
+
+    .projects{
+        .projects_item{
+            width: 40rem;
+        }
+    }
+    
+}
+
+@media (min-width: 2000px) {
+    .container {
+        width: 70%;
+    }
+
+    .projects{
+        .projects_item{
+            width: 38rem;
+        }
+    }
+}
+
+@media (min-width: 2400px) {
+    .container {
+        width: 60%;
+    }
+
+    .projects{
+        gap: 3rem;
+        .projects_item{
+            width: 40rem;
+        }
+    }
+}

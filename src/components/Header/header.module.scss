@@ -91,3 +91,9 @@
       display: block;
   }
 }
+
+@media (min-width: 2400px) {
+  .container {
+      padding: 0 10rem;
+  }
+}

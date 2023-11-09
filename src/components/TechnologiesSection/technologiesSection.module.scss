@@ -1,3 +1,10 @@
+.tecnologies{
+    width: 100vw;
+    background-color: var(--preto-3);
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     background-color: var(--preto-3);
     padding: 9rem;
@@ -72,5 +79,33 @@
     .technologiesItem {
         width: auto;
         text-align: center; 
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 90%;
+    }
+
+    .technologies{
+        padding: 0 8rem;
+        gap: 8rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .container {
+        width: 70%;
+    }
+
+    .technologies{
+        padding: 0;
+        gap: 10rem;
+   }
+}
+
+@media (min-width: 2400px) {
+    .container {
+        width: 60%;
     }
 }
