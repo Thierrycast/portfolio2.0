@@ -1,18 +1,25 @@
-.home {
+.home{
+    width: 100vw;
     background-color: var(--preto-3);
+    display: flex;
+    justify-content: center;
+    
 }
 
 .container {
+    width: 100%;
     display: flex;
     padding: 9rem 9rem 12rem;
     margin-top: 7rem;
+    justify-content: space-around;
+    
 }
 
 .left_div {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
+    
 
     div {
         p {
@@ -108,5 +115,25 @@
         p{
             font-size: 1.8rem;
         }
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 90%;
+        padding-top: 12rem;
+        padding-bottom: 15rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 2400px) {
+    .container {
+        width: 60%;
     }
 }
